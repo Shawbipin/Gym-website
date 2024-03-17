@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Gym Website</title>
+</head>
+
+<body>
+  <!-- changes made from line 232 -->
+  <!-- changes made in css of classes: fitness-color, fitness and fitness-facility -->
+
+  <header>
+    <div class="navbar">
+      <div class="nav-logo">
+        <img src="asset/fitness logo.png" alt="" />
+      </div>
+
+      <div class="nav-link">
+        <a href="./index.html">Home</a>
+        <a href="/classs/classes.html">Classes</a>
+        <a href="/Product/product.html">Products</a>
+        <a href="/blog/index.html">Blogs</a>
+      </div>
+
+      <button class="join-btn" onclick="showModal()">Login</button>
+
+      <div class="overlay"></div>
+
+      <div class="login-form">
+
+        <div class="login-nav">
+          <h2>SUBSCRIPTION PLAN</h2>
+          <span>&times;</span>
+        </div>
+
+        <div class="type-section">
+          <div class="box-1">
+            <label for="">Full Name:</label>
+            <br />
+            <input type="text" />
+          </div>
+          &nbsp
+          <div class="box-1">
+            <label for="">Email:</label>
+            <br />
+            <input type="text" />
+          </div>
+          &nbsp
+          <div class="box-1">
+            <label for="">Phone No:</label>
+            <br />
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="radio-section-1">
+          <label for="">Duration:</label> <br />
+          &nbsp
+          <div class="radio-box">
+            <div class="radio-box-1">
+              <input type="radio" class="btn-size" /> &nbsp
+              <label for="">Monthly</label>
+            </div>
+
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            <div class="radio-box-2">
+              <input type="radio" class="btn-size" />
+              &nbsp
+              <label for="">Yearly</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="radio-section-2">
+          <label for="">Mode of Payment:</label> <br />
+          &nbsp
+          <div class="radio-box">
+            <div class="radio-box-1">
+              <input type="radio" class="btn-size" /> &nbsp
+              <label for="">Cash</label>
+            </div>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp
+            <div class="radio-box-2">
+              <input type="radio" class="btn-size" />
+              &nbsp
+              <label for="">Online</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <span style="font-weight: 600; font-size: 1.3rem">Personal Training :</span>
+          <span>*free with yearly plan</span>
+
+          <div class="footer-radio">
+            <div class="footer-radio-1">
+              <input type="radio" class="btn-size" /> &nbsp &nbsp
+              <label for="">Required</label>
+            </div>
+            &nbsp &nbsp &nbsp
+            <div class="footer-radio-2">
+              <input type="radio" class="btn-size" /> &nbsp &nbsp
+              <label for="">Not Required</label>
+            </div>
+            &nbsp &nbsp &nbsp
+            <div class="footer-radio-3">
+              <input type="checkbox" class="btn-size" />
+              &nbsp &nbsp
+              <label for="">I accept all terms and <br />
+                &nbsp &nbsp conditions provided in this form.</label>
+            </div>
+          </div>
+
+          <button>BUY PLAN</button>
+        </div>
+      </div>
+
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
+
+
+    </div>
+    <div class="home-page">
+      <img src="asset/home.jpg" alt="" />
+
+      <div class="home-text">
+        <p class="first">Revitalize</p>
+        <p class="first">Your body</p>
+        <p class="second">
+          Fall in love with taking care of yourself: <br />
+          mind,body and spirit.
+        </p>
+
+        <div class="btn">
+          <button class="btn-1">Get Started</button>
+
+          <button class="btn-2">
+            Free Trail
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="icon-logo">
+      <div class="icon-bg">
+
+      </div>
+      <div class="home-icon-left">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+  
+    </div> -->
+    <div class="link-wrapper">
+      <div class="icon-shadow">
+
+      </div>
+      <div class="social-links">
+        <div class="icon-whatsapp">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="icon-facebook">
+          <i class="fa-brands fa-whatsapp"></i>
+
+        </div>
+        <div class="icon-youtube">
+          <i class="fa-brands fa-facebook"></i>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="gym-parts">
+      <div class="item border">
+        <img src="asset/icons8-weight-pound-50.png" alt="" />
+
+        <p>Weight Loss</p>
+      </div>
+      <div class="item border">
+        <img src="asset/icons8-yoga-50.png" alt="" />
+        <p>Classic Yoga</p>
+      </div>
+      <div class="item border">
+        <img src="asset/icons8-cycling-50.png" alt="" />
+        <p>Cycling</p>
+      </div>
+      <div class="item border">
+        <img src="asset/icons8-biceps-50.png" alt="" />
+        <p>Bodybuilding</p>
+      </div>
+      <div class="item border">
+        <img src="asset/icons8-barbell-50.png" alt="" />
+        <p>Hypertrophy</p>
+      </div>
+      <div class="item border">
+        <img src="asset/icons8-running-50.png" alt="" />
+        <p>Running</p>
+      </div>
+    </div>
+
+
+
+    <div class="subscription">
+      <img src="asset/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" alt="" />
+
+      <p>Subscription Plans</p>
+
+      <div class="subscription-box">
+        <div class="subscription-box-1 border">
+          <h4 style="color: #ffa500">Basic</h4>
+          <h6>for 12 months</h6>
+          &nbsp;
+
+          <h4 style="color: #ffa500">800/month</h4>
+          <h6>for streaming</h6>
+
+          <button>Select Plan</button>
+        </div>
+
+        <div class="subscription-box-2 border">
+          <h4 style="color: #ffa500">Intermediate</h4>
+          <h6>for 12 months</h6>
+          &nbsp;
+          <h4 style="color: #ffa500">1000/month</h4>
+          <h6>for streaming</h6>
+
+          <button>Select Plan</button>
+        </div>
+        <div class="subscription-box-3 border">
+          <h4 style="color: #ffa500">Advanced</h4>
+          <h6>for 12 months</h6>
+          &nbsp;
+
+          <h4 style="color: #ffa500">1500/month</h4>
+          <h6>for streaming</h6>
+
+          <button>Select Plan</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fitness-color">
+
+      <div class="fitness">
+        <img src="asset/gym1.jpg" alt="" />
+      </div>
+
+      <div class="fitness-facility">
+
+        <div class="facility-1">
+          <img src="asset/gym2.png" alt="" />
+          <p class="fitness-text-1">Good Management</p>
+          <h6>What hurts today makes you <br />stringer tomorrow</h6>
+        </div>
+
+        <div class="facility-2">
+          <img src="asset/gym3.png" alt="" />
+          <p class="fitness-text-1">Practice Sessions</p>
+          <h6>
+            Motivation is What gets you ,<br />
+            Started
+          </h6>
+        </div>
+
+        <div class="facility-3">
+          <img src="asset/gym4.png" alt="" />
+          <p class="fitness-text-1">Personal Trainers</p>
+          <h6>
+            If it doesn't challenge you, <br />
+            it won't change you
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="fitness-quality">
+      <p>Success Stories</p>
+      <div class="quality-box">
+        <div class="quality-1">
+          <img src="asset/mubariz-mehdizadeh-Py8F6-hRn5o-unsplash.jpg" alt="" />
+          <p>Best place for body transformation</p>
+        </div>
+
+        <div class="quality-2">
+          <img src="asset/mark-adriane-xQghSLXYD3M-unsplash.jpg" alt="" />
+          <p>Best Cross Fit gym in this area</p>
+        </div>
+
+        <div class="quality-3">
+          <img src="asset/aaron-brogden-miCR9VIQ5PE-unsplash.jpg" alt="" />
+          <p>
+            Best Bodybuilding gym in<br />this city it has all required
+            <br />equipment
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="footer-box-1">
+        <img src="asset/fitness logo.png" alt="" />
+        <p>
+          Prioritize Your Fitness Goals,<br />
+          with our world class services
+        </p>
+      </div>
+
+      <div class="footer-box-2">
+        <h2 class="grid-item">COMPANY</h2>
+        <h2 class="grid-item">CONTACT</h2>
+        <h2 class="grid-item">MORE</h2>
+        <p class="grid-item">About</p>
+        <p class="grid-item">Help/FAQs</p>
+        <p class="grid-item">Program</p>
+        <p class="grid-item">Careers</p>
+        <p class="grid-item">Press</p>
+        <p class="grid-item">Plans</p>
+        <p class="grid-item">Blogs</p>
+        <p class="grid-item">Mobile</p>
+        <p class="grid-item">Method</p>
+      </div>
+
+      <div class="footer-box-3">
+        <h2>Popular Tags</h2>
+        <div class="grid-tags">
+          <p class="tags-1">ABS</p>
+          <p class="tags-2">Workout</p>
+          <p class="tags-2">Nutrition</p>
+          <p class="tags-1">GYM</p>
+          <p class="tags-1">Boxing</p>
+          <p class="tags-2">Trainers</p>
+          <p class="tags-2 middle">Facilites</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyRight">
+      <p>CopyRight All Rights Reserved</p>
+    </div>
+
+
+  </header>
+
+  <script src="index.js"></script>
+
+  <!--for menu and close icon  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
